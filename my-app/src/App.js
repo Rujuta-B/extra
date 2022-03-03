@@ -3,13 +3,15 @@ import React from 'react'
 // import Counter from './components/Counter';
 // import EventBind from './components/EventBind';
 import { HooksCounter } from './components/HooksCounter';
+import { HooksCounterTwo } from './components/HooksCounterTwo';
  
 
 function App() {
   return (
     <div className="App">
     
-    <HooksCounter />
+    <HooksCounterTwo />
+    {/* <HooksCounter /> */}
     {/* <EventBind /> */}
     {/* <Counter /> */}
      {/* < Message /> */}
