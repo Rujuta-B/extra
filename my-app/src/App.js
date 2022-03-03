@@ -4,13 +4,14 @@ import React from 'react'
 // import EventBind from './components/EventBind';
 import { HooksCounter } from './components/HooksCounter';
 import { HooksCounterTwo } from './components/HooksCounterTwo';
- 
+import { HooksExample3 } from './components/HooksExample3';
 
 function App() {
   return (
     <div className="App">
     
-    <HooksCounterTwo />
+    <HooksExample3 />
+    {/* <HooksCounterTwo /> */}
     {/* <HooksCounter /> */}
     {/* <EventBind /> */}
     {/* <Counter /> */}
