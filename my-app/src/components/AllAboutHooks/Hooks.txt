@@ -1,0 +1,43 @@
+- Hooks are a new feature addition in React version 16.8 which allow you to use React features without having to write a class.
+
+- Eg. State of a class.
+
+- Hooks don't work inside a class.
+
+- WHY Hooks?
+Before Hooks, we had to: 
+
+- REASON 1
+i) understand how 'this' keyword worked in JS.
+ii) Remember to bind event handlers in class comp.
+iii) And Class comp didn't minify very well and made hot reloqading very unreliable.
+
+{ what is hot reloading ?
+
+- Initially the bottleneck was -- the time it takes between you save a file and be able to see the changes. Our goal is to get this feedback loop to be under 1 second, even as your app grows.
+At this point, the bottleneck for developers is no longer the time it takes to reload the app but losing the state of your app. A common scenario is to work on a feature that is multiple screens away from the launch screen. Every time you reload, you've got to click on the same path again and again to get back to your feature, making the cycle multiple-seconds long.
+
+- Hot Reloading
+The idea behind hot reloading is to keep the app running and to inject new versions of the files that you edited at runtime. This way, you don't lose any of your state which is especially useful if you are tweaking the UI. (small modifications intended to improve a system).
+
+}
+
+- REASON 2: 
+There is no way to reuse stateful componnent logic between components.
+HOC(higher order comp) and render props patterns do address this problem, but the code becomes harder to follow so there was a need to share stateful logic in a better way.
+Hook help us here wihout changing the comp hierarchy
+
+
+- REASON 3:
+Creating comp for complex scenarios like Data fetching and subscribing to events. Here the code is not organized in one place but scattered across different lifecycle methods.
+Eg. Data fetching is done in componentDidMount & componentDidUpdate.
+Eg. Event listeners is done in componentDidMount & componentDidUnmount.
+Hooks help us into breaking related code into smaller functions without using lifecycle methods.
+
+RULES TO USE HOOKS:
+ 
+- only call hooks at the top level
+    don't call hooks inside conditionsls, loops, nested functions
+
+- only call hooks from React functions
+    Call them from within React functional components and not just any regular JS function.
