@@ -1,17 +1,16 @@
 import React from 'react'
-// import Welcome from './components/Welcome';
-// import Destructuring from './components/Destructuring';
 // import Message from "./components/Message";
 // import Counter from './components/Counter';
-import ClassClick from './components/ClassClick';
-import FunctionClick from './components/FunctionClick';
+// import EventBind from './components/EventBind';
+import { HooksCounter } from './components/HooksCounter';
+ 
 
 function App() {
   return (
     <div className="App">
-      <FunctionClick />
-    <ClassClick />    
-    {/* <Destructuring name="bruce" heroName={"superman"} /> */}
+    
+    <HooksCounter />
+    {/* <EventBind /> */}
     {/* <Counter /> */}
      {/* < Message /> */}
     </div>
